@@ -1,0 +1,114 @@
+/* ===== Resume ===== */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* Education card */
+.resume-edu {
+  background: var(--card-bg);
+  border: 1px solid rgba(26, 188, 156, 0.1);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.resume-edu h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.resume-edu .edu-school {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.resume-edu .edu-year {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.resume-edu .edu-cgpa {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(26, 188, 156, 0.12);
+  color: var(--accent);
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* About / Extra */
+.resume-about {
+  background: var(--card-bg);
+  border: 1px solid rgba(26, 188, 156, 0.1);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.resume-about h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+
+.resume-about p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* Skills */
+.resume-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.skills-group h3 {
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-badge {
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(26, 188, 156, 0.3);
+  color: var(--accent);
+  background: rgba(26, 188, 156, 0.06);
+  transition: all var(--transition);
+}
+
+.skill-badge:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+/* Download button */
+.resume-download {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .resume-grid,
+  .resume-skills {
+    grid-template-columns: 1fr;
+  }
+}
